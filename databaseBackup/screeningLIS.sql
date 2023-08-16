@@ -3,10 +3,8 @@
 DROP TABLE IF EXISTS `form`;
 
 CREATE TABLE form (
-    id INTEGER,
     name VARCHAR(64),
     age INTEGER,
     title VARCHAR(64),
-    hometown VARCHAR(128),
-    PRIMARY KEY(id)
+    hometown VARCHAR(128)
 );

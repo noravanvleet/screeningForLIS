@@ -2,10 +2,10 @@
 const config = {
    
     host: 'localhost',
-    port: 3333,
     user: 'root', //replace with your user
     password: 'password', //replace with your mysql password
     database: 'screeningLIS',
+    port: 3306
 
 };
 

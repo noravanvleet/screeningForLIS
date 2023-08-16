@@ -1,10 +1,14 @@
 import express from 'express';
 import path from 'path';
 import router from './route/form.js';
+import bodyParser from 'body-parser';
 
 const app = express();
 
 const port = 3030;
+
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({extended: false}));
 
 // This deploys the application onto the local host at a given port
 app.listen(port, () => {
