@@ -1,11 +1,8 @@
 import express from 'express';
 import path from 'path';
 import router from './route/form.js';
-import cors from 'cors';
 
 const app = express();
-
-app.use(cors); 
 
 const port = 3030;
 
