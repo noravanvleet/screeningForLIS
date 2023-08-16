@@ -15,7 +15,6 @@ router.post('/formEntry', (req,res)=> {
     const title = req.body.userTitle;
     const hometown = req.body.userHometown;
 
-    // '${name}', '${age}', '${title}', '${hometown}'
     // Inserts the user inputs to the mysql table
     connection.query(`INSERT INTO form(name, age, title, hometown) 
                       VALUES(?, ?, ?, ?)`,
@@ -29,8 +28,15 @@ router.post('/formEntry', (req,res)=> {
     res.redirect('/confirmation.html');
 });
 
-// router.fetch('/formPastEntries', (req, res) => {
-
-// })
+router.get('/formPastEntries', (req, res) => {
+  // // Redirects to the proper page
+  // res.redirect('/confirmation.html');
+  connection.query(`SELECT * FROM form`,
+                    (err, rows) => {
+                      if (err) throw err;
+                      res.send(rows);
+                    }
+                  );
+})
 
 export default router;
