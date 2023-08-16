@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', async() => {
 async function pastEntries() {
     const response = await fetch('/form/formPastEntries').then(Response => Response.json())
         .then(Rows => { 
-            // console.log(Rows);
             Rows.map(Entry => {
                 var newRow = document.createElement('tr');
                 newRow.innerHTML =
