@@ -20,7 +20,7 @@ Step 3: Load the dump file for the database.
   exit;
 
 Step 3: Once in the correct directory in the terminal run:
-node start
+npm start
 
 
 This will deploy the web application to a local host at port 3030.
