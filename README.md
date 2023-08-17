@@ -13,7 +13,7 @@ Step 2: Install Node and MySQL
 - If you do not have mysql on your computer download and install it here: 
   https://dev.mysql.com/downloads/
 
-- Once these are both downloaded and instaled run: 
+- Once these are both downloaded open your terminal and instaled run: 
   npm install mysql
 
 Step 3: Load the dump file for the database.  
