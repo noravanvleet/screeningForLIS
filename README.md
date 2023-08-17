@@ -1,11 +1,12 @@
 # screeningForLIS
-Description: A single form with input fields.
+Description: A single form with input fields.  The web application is locally hosted with Node JS and 
+has a local mysql database called screeningLIS.
 
 Setup: 
 Step 1: Clone the repository.  
 git clone git@github.com:noravanvleet/screeningForLIS.git
 
-Step 2: 
+Step 2: Install Node and MySQL
 - If you do not have node on your computer download and install it here: https://nodejs.org/en/download
   Follow the installation instructions once downloaded.
 - If you do not have mysql on your computer open the terminal and run:
