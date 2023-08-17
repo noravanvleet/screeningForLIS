@@ -4,7 +4,7 @@
   "description": "A single form with input fields.",
   "main": "index.js",
   "scripts": {
-    "start": "npm install express && npm install mysql2 && node index.js"
+    "start": "npm install && npm install express && npm install mysql && npm install mysql2 && node index.js"
   },
   "type": "module",
   "author": "Nora Van Vleet",
