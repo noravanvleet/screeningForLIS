@@ -5,16 +5,24 @@ Setup:
 Step 1: Clone the repository.  
 git clone git@github.com:noravanvleet/screeningForLIS.git
 
-Step 2:If you do not have mysql on your computer run:
-npm install mysql
+Step 2: 
+- If you do not have node on your computer download and install it here: https://nodejs.org/en/download
+  Follow the installation instructions once downloaded.
+- If you do not have mysql on your computer open the terminal and run:
+  npm install mysql
 
-Step 3: Load the dump file for the database
-mysql -u root -p screeningLIS < dump.sql
+Step 3: Load the dump file for the database.  
+- First locate the repository directory in the terminal.  Then run:
+  mysql -u root -p
+  CREATE DATABASE screeningLIS;
+- Then update the path/to/repo to be the path to the repository on your computer.  One run,
+  source path/to/repo/screeningForLIS/databaseBackup/dump.sql;
+  exit;
 
-Step 3: Locate the proper directory in the terminal.
-Step 4: Once in the correct directory in the terminal run:
-node index.js
+Step 3: Once in the correct directory in the terminal run:
+node start
 
 
 This will deploy the web application to a local host at port 3030.
 This can be found with this link: http://localhost:3030/
+
