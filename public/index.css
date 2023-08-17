@@ -24,5 +24,19 @@ td {
     text-align: center;
 }
 
+form {
+    text-align: center;
+    padding: 20%;
+}
+
+#formInputs {
+    background-color: #C3ACD0;
+    height: 300px;
+    text-align: center;
+    padding: 50px;
+}
 
 
+#results {
+    padding: 5%;
+}
