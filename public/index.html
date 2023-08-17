@@ -7,11 +7,14 @@
  <!--  --> 
         <form action="/form/formEntry" method="post">
             <!-- Form Inputs -->
-            <h1>Name: <input type="text" class="formInput" name="userName" required></input></h1>
-            <h1>Age: <input type="number" class="formInput" value="0" name="userAge"></input></h1>
-            <h1>Title: <input type="text" class="formInput" name="userTitle" required></input></h1>
-            <h1>Hometown: <input type="text" class="formInput" name="userHometown" ></input></h1>
-            <button type="submit" href="/confirmation.html">Submit Form</button>
+            <h1>Fill Out This Form</h1>
+            <div id="formInputs">
+                <h1>Name: <input type="text" class="formInput" name="userName" placeholder="Jane" required></input></h1>
+                <h1>Age: <input type="number" class="formInput" value="0" name="userAge"></input></h1>
+                <h1>Title: <input type="text" class="formInput" name="userTitle" placeholder="Miss" required></input></h1>
+                <h1>Hometown: <input type="text" class="formInput" name="userHometown" placeholder="Columbus"></input></h1>
+                <button type="submit" href="/confirmation.html">Submit Form</button>
+            </div>
         </form>
         <script href="../index.js" type="module"></script>
     </body>
