@@ -7,8 +7,11 @@ const app = express();
 
 const port = 3030;
 
-router.use(bodyParser.json());
-router.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+
+// Gets rid of favicon
+app.get('/favicon.ico', (req, res) => res.status(204));
 
 // This deploys the application onto the local host at a given port
 app.listen(port, () => {
